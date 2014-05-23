@@ -13,13 +13,12 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    player = [SMPMusicPlayer new];
 }
 
-- (IBAction)play:(id)sender {
+- (IBAction)retrieve:(id)sender {
     NSLog(@"received a play: message");
-    SMPAudioAnalyzerObjc * analyzer = [SMPAudioAnalyzerObjc new];
-    NSMutableArray * files = [[NSMutableArray alloc]initWithObjects:
+    NSArray * files = [[NSArray alloc]initWithObjects:
                               @"/Users/Steve/Music/iTunes/iTunes Media/Music/Lords of Acid/Farstucker/01 Scrood Bi U.mp3",
                               @"/Users/Steve/Music/iTunes/iTunes Media/Music/Lords of Acid/Farstucker/02 Lover Boy _ Lover Girl.mp3",
                               @"/Users/Steve/Music/iTunes/iTunes Media/Music/Lords of Acid/Farstucker/03 Rover Take Over.mp3",
@@ -31,7 +30,11 @@
                               @"/Users/Steve/Music/iTunes/iTunes Media/Music/Lords of Acid/Farstucker/10 (A Treatise On The Practical Methods Whereby One Can) Worship The Lords.mp3",
                               @"/Users/Steve/Music/iTunes/iTunes Media/Music/Lords of Acid/Farstucker/11 A Ride With Satans Little Helpers.mp3",
                               nil];
-    [analyzer retrieveWithStringPaths:files];
+    [player retrieveAnalysisWithStringPaths:files];
     
+}
+
+- (IBAction)splicePoints:(id)sender {
+    [player nextSplicePoints];
 }
 @end

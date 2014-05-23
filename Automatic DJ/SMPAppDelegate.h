@@ -7,11 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SMPMusicPlayer.h"
 
-@interface SMPAppDelegate : NSObject <NSApplicationDelegate>
+@interface SMPAppDelegate : NSObject <NSApplicationDelegate> {
+    SMPMusicPlayer * player;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
-- (IBAction)play:(id)sender;
+- (IBAction)retrieve:(id)sender;
+- (IBAction)splicePoints:(id)sender;
 
 @end

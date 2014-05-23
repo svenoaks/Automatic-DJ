@@ -17,7 +17,7 @@
 @end
 
 @implementation SMPAudioAnalyzerObjc
--(void)retrieveWithStringPaths:(NSMutableArray *)files {
+-(void)retrieveWithStringPaths:(NSArray *)files {
     vector<string> cppFiles;
     for (id file in files)
     {
@@ -25,5 +25,10 @@
         cppFiles.push_back(std::string{[str UTF8String]});
     }
     analyzer.retrieve(cppFiles);
+}
+-(void)nextSplicePointWithTimeBeforeEndOfFirstSong:(float)timeEnd timeAfterBeginningOfNextSong:(float)timeBegin returnedFirstSongValue:(float *)returnedFirst returnedSecondSongValue:(float *)returnedSecond {
+    
+    analyzer.nextSplicePoint(timeEnd, timeEnd, *returnedFirst, *returnedSecond);
+    
 }
 @end

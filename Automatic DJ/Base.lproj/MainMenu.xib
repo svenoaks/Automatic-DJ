@@ -676,14 +676,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UCF-Hp-DCm">
-                        <rect key="frame" x="107" y="260" width="65" height="32"/>
+                        <rect key="frame" x="107" y="260" width="91" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dkj-U6-A2e">
+                        <buttonCell key="cell" type="push" title="Retrieve" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dkj-U6-A2e">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="play:" target="Voe-Tx-rLC" id="nKp-mr-a47"/>
+                            <action selector="retrieve:" target="Voe-Tx-rLC" id="aI4-ew-PdE"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xkk-8e-4df">
+                        <rect key="frame" x="111" y="220" width="115" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="SplicePoints" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MJt-VX-3m7">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="splicePoints:" target="Voe-Tx-rLC" id="uao-3E-3Te"/>
                         </connections>
                     </button>
                 </subviews>

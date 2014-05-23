@@ -21,8 +21,8 @@
 		AAA57B5519294ED400D0BE08 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA57B3419294ED400D0BE08 /* Cocoa.framework */; };
 		AAA57B5D19294ED400D0BE08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAA57B5B19294ED400D0BE08 /* InfoPlist.strings */; };
 		AAA57B5F19294ED400D0BE08 /* Automatic_DJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA57B5E19294ED400D0BE08 /* Automatic_DJTests.m */; };
-		AAA57B6C192AF2D800D0BE08 /* MusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA57B6B192AF2D800D0BE08 /* MusicPlayer.m */; };
 		AAA57B76192C40F700D0BE08 /* SMPAudioAnalyzerObjc.mm in Sources */ = {isa = PBXBuildFile; fileRef = AAA57B75192C40F700D0BE08 /* SMPAudioAnalyzerObjc.mm */; };
+		AAB6594A192ED16C0017B634 /* SMPMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB65949192ED16C0017B634 /* SMPMusicPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +60,10 @@
 		AAA57B5A19294ED400D0BE08 /* Automatic DJTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Automatic DJTests-Info.plist"; sourceTree = "<group>"; };
 		AAA57B5C19294ED400D0BE08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AAA57B5E19294ED400D0BE08 /* Automatic_DJTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Automatic_DJTests.m; sourceTree = "<group>"; };
-		AAA57B6A192AF2D800D0BE08 /* MusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayer.h; sourceTree = "<group>"; };
-		AAA57B6B192AF2D800D0BE08 /* MusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayer.m; sourceTree = "<group>"; };
 		AAA57B74192C40F700D0BE08 /* SMPAudioAnalyzerObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPAudioAnalyzerObjc.h; sourceTree = "<group>"; };
 		AAA57B75192C40F700D0BE08 /* SMPAudioAnalyzerObjc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SMPAudioAnalyzerObjc.mm; sourceTree = "<group>"; };
+		AAB65948192ED16C0017B634 /* SMPMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPMusicPlayer.h; sourceTree = "<group>"; };
+		AAB65949192ED16C0017B634 /* SMPMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPMusicPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +142,10 @@
 				AAA57B4919294ED400D0BE08 /* MainMenu.xib */,
 				AAA57B4C19294ED400D0BE08 /* Images.xcassets */,
 				AAA57B3B19294ED400D0BE08 /* Supporting Files */,
-				AAA57B6A192AF2D800D0BE08 /* MusicPlayer.h */,
-				AAA57B6B192AF2D800D0BE08 /* MusicPlayer.m */,
 				AAA57B74192C40F700D0BE08 /* SMPAudioAnalyzerObjc.h */,
 				AAA57B75192C40F700D0BE08 /* SMPAudioAnalyzerObjc.mm */,
+				AAB65948192ED16C0017B634 /* SMPMusicPlayer.h */,
+				AAB65949192ED16C0017B634 /* SMPMusicPlayer.m */,
 			);
 			path = "Automatic DJ";
 			sourceTree = "<group>";
@@ -280,9 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA57B76192C40F700D0BE08 /* SMPAudioAnalyzerObjc.mm in Sources */,
+				AAB6594A192ED16C0017B634 /* SMPMusicPlayer.m in Sources */,
 				AAA57B4119294ED400D0BE08 /* main.m in Sources */,
 				AAA57B4819294ED400D0BE08 /* SMPAppDelegate.m in Sources */,
-				AAA57B6C192AF2D800D0BE08 /* MusicPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
