@@ -8,7 +8,9 @@
 
 #import "SMPMusicPlayer.h"
 
-@implementation SMPMusicPlayer
+@implementation SMPMusicPlayer {
+    SMPAudioAnalyzerObjc * analyzer;
+}
 -(id)init {
     if (self = [super init] ) {
         analyzer = [SMPAudioAnalyzerObjc new];
@@ -27,6 +29,5 @@
     [analyzer nextSplicePointWithTimeBeforeEndOfFirstSong:TIME_IN timeAfterBeginningOfNextSong:TIME_IN returnedFirstSongValue:&first returnedSecondSongValue:&second];
     
     NSLog(@"First: %f, Second: %f", first, second);
-    
 }
 @end

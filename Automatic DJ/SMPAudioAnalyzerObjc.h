@@ -11,4 +11,6 @@
 @interface SMPAudioAnalyzerObjc : NSObject
 -(void)retrieveWithStringPaths:(NSArray *)files;
 -(void)nextSplicePointWithTimeBeforeEndOfFirstSong:(float)timeEnd timeAfterBeginningOfNextSong:(float)timeBegin returnedFirstSongValue:(float *)returnedFirst returnedSecondSongValue:(float *)returnedSecond;
+-(void)printData;
+-(id)initWithStringPaths:(NSArray *)files;
 @end

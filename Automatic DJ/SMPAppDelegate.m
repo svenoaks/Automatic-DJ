@@ -8,12 +8,18 @@
 
 #import "SMPAppDelegate.h"
 #import "SMPAudioAnalyzerObjc.h"
+#import "SMPMusicPlayer.h"
 
-@implementation SMPAppDelegate
+@implementation SMPAppDelegate {
+    SMPMusicPlayer * player;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     player = [SMPMusicPlayer new];
+}
+- (void)applicationWillTerminate:(NSApplication *)application {
+    player = nil;
 }
 
 - (IBAction)retrieve:(id)sender {

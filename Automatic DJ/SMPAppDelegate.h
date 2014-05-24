@@ -10,7 +10,7 @@
 #import "SMPMusicPlayer.h"
 
 @interface SMPAppDelegate : NSObject <NSApplicationDelegate> {
-    SMPMusicPlayer * player;
+    
 }
 
 @property (assign) IBOutlet NSWindow *window;

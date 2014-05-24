@@ -10,9 +10,6 @@
 #import "SMPAudioAnalyzerObjc.h"
 
 @interface SMPMusicPlayer : NSObject
-{
-    SMPAudioAnalyzerObjc * analyzer;
-}
 
 -(void)retrieveAnalysisWithStringPaths:(NSArray *)files;
 -(void)nextSplicePoints;

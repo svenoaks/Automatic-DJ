@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3AFE591931003B00BE9B31 /* libessentia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3AFE581931003B00BE9B31 /* libessentia.a */; };
+		AA3AFE5B1931004400BE9B31 /* libaudioanalyzer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3AFE5A1931004400BE9B31 /* libaudioanalyzer.a */; };
 		AA6465D4192D940400466809 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6465D3192D940400466809 /* libsqlite3.dylib */; };
-		AA6465D6192D967500466809 /* libessentia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6465D5192D967500466809 /* libessentia.a */; };
-		AA6465D9192E0F4500466809 /* libaudioanalyzer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6465D8192E0F4500466809 /* libaudioanalyzer.a */; };
 		AAA57B3519294ED400D0BE08 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA57B3419294ED400D0BE08 /* Cocoa.framework */; };
 		AAA57B3F19294ED400D0BE08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAA57B3D19294ED400D0BE08 /* InfoPlist.strings */; };
 		AAA57B4119294ED400D0BE08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA57B4019294ED400D0BE08 /* main.m */; };
@@ -36,11 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA6465CD192D911F00466809 /* libAudioAnalyzer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAudioAnalyzer.a; path = "../../../Library/Developer/Xcode/DerivedData/AudioAnalyzer-gehfwbbtxonfnodewjbxzhmaixzv/Build/Products/Debug/libAudioAnalyzer.a"; sourceTree = "<group>"; };
-		AA6465CF192D918200466809 /* libessentia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libessentia.a; path = "../../essentia-2.0.1_built/build/src/libessentia.a"; sourceTree = "<group>"; };
+		AA3AFE581931003B00BE9B31 /* libessentia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libessentia.a; path = ../../../../../usr/local/lib/libessentia.a; sourceTree = "<group>"; };
+		AA3AFE5A1931004400BE9B31 /* libaudioanalyzer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudioanalyzer.a; path = ../../../../../usr/local/lib/libaudioanalyzer.a; sourceTree = "<group>"; };
 		AA6465D3192D940400466809 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
-		AA6465D5192D967500466809 /* libessentia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libessentia.a; path = ../../../../../usr/local/lib/libessentia.a; sourceTree = "<group>"; };
-		AA6465D8192E0F4500466809 /* libaudioanalyzer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudioanalyzer.a; path = ../../../../../usr/local/lib/libaudioanalyzer.a; sourceTree = "<group>"; };
 		AAA57B3119294ED400D0BE08 /* Automatic DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Automatic DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA57B3419294ED400D0BE08 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AAA57B3719294ED400D0BE08 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -73,8 +71,8 @@
 			files = (
 				AAA57B3519294ED400D0BE08 /* Cocoa.framework in Frameworks */,
 				AA6465D4192D940400466809 /* libsqlite3.dylib in Frameworks */,
-				AA6465D9192E0F4500466809 /* libaudioanalyzer.a in Frameworks */,
-				AA6465D6192D967500466809 /* libessentia.a in Frameworks */,
+				AA3AFE5B1931004400BE9B31 /* libaudioanalyzer.a in Frameworks */,
+				AA3AFE591931003B00BE9B31 /* libessentia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,11 +110,9 @@
 		AAA57B3319294ED400D0BE08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA6465D8192E0F4500466809 /* libaudioanalyzer.a */,
-				AA6465D5192D967500466809 /* libessentia.a */,
+				AA3AFE5A1931004400BE9B31 /* libaudioanalyzer.a */,
+				AA3AFE581931003B00BE9B31 /* libessentia.a */,
 				AA6465D3192D940400466809 /* libsqlite3.dylib */,
-				AA6465CF192D918200466809 /* libessentia.a */,
-				AA6465CD192D911F00466809 /* libAudioAnalyzer.a */,
 				AAA57B3419294ED400D0BE08 /* Cocoa.framework */,
 				AAA57B5319294ED400D0BE08 /* XCTest.framework */,
 				AAA57B3619294ED400D0BE08 /* Other Frameworks */,
@@ -420,12 +416,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/Steve/Code/Git/AudioAnalyzer/**",
+					"/usr/local/include/essentia/**",
+					"/usr/local/include/audioanalyzer/**",
+					"/usr/local/include/hiberlite/**",
 				);
 				INFOPLIST_FILE = "Automatic DJ/Automatic DJ-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AudioAnalyzer-gehfwbbtxonfnodewjbxzhmaixzv/Build/Products/Debug",
 					"/usr/local/lib/**",
 				);
 				OTHER_LDFLAGS = (
@@ -455,12 +452,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/Steve/Code/Git/AudioAnalyzer/**",
+					"/usr/local/include/essentia/**",
+					"/usr/local/include/audioanalyzer/**",
+					"/usr/local/include/hiberlite/**",
 				);
 				INFOPLIST_FILE = "Automatic DJ/Automatic DJ-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AudioAnalyzer-gehfwbbtxonfnodewjbxzhmaixzv/Build/Products/Debug",
 					"/usr/local/lib/**",
 				);
 				OTHER_LDFLAGS = (
